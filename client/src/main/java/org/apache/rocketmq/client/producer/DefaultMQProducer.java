@@ -645,8 +645,9 @@ public class DefaultMQProducer extends ClientConfig implements MQProducer {
         this.retryTimesWhenSendFailed = retryTimesWhenSendFailed;
     }
 
+    // TODO: 17-12-14 运行例子报错--false这个就好了
     public boolean isSendMessageWithVIPChannel() {
-        return isVipChannelEnabled();
+        return false;
     }
 
     public void setSendMessageWithVIPChannel(final boolean sendMessageWithVIPChannel) {
